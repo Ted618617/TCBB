@@ -67,32 +67,33 @@ python analyze_data.py --mode full --reset-state
 6) Run dashboard
 streamlit run dashboard.py
 
-# 【Incremental demo (watermark)】
-# generate new transactions in a newer time window than watermark
-python generate_data.py --n-transactions 20000 --start-date 2026-04-02 --months 1
-python analyze_data.py --mode incremental
+# Incremental demo (watermark)
+	# generate new transactions in a newer time window than watermark
+	
+	python generate_data.py --n-transactions 20000 --start-date 2026-04-02 --months 1
+	python analyze_data.py --mode incremental
 
-# 【Data Quality Rules (examples)】
+# Data Quality Rules (examples)
 
-	R001 Required fields not null
+	- R001 Required fields not null
 
-	R002 Amount within valid range
+	- R002 Amount within valid range
 
-	R003 Currency in allowlist
+	- R003 Currency in allowlist
 
-	R004 Transaction time not in future
+	- R004 Transaction time not in future
 
-	R005 Account FK exists
+	- R005 Account FK exists
 
-	R006 Channel FK exists
+	- R006 Channel FK exists
 
-	R007 Merchant FK exists for card purchase
+	- R007 Merchant FK exists for card purchase
 
-	R008 No duplicate txn_id + source_system in batch
+	- R008 No duplicate txn_id + source_system in batch
 
 PS：Bad rows are written to meta.quarantine_transactions and excluded from Mart Fact.
 
-# 【Demo Result (example run)】
+# Demo Result (example run)
 
 	raw rows: 100,000
 
@@ -104,7 +105,7 @@ PS：Bad rows are written to meta.quarantine_transactions and excluded from Mart
 
 	run logs stored in meta.etl_run_log
 	
-# 【Notes / Design choices】
+# Notes / Design choices
 
 	Raw layer is kept append-only for auditability.
 
@@ -116,4 +117,6 @@ PS：Bad rows are written to meta.quarantine_transactions and excluded from Mart
 
 ---
 
-# Demo Result ： 2026-03-03 17:49:39+0000 | success | rows_raw=100000 | 83aac446-0cd3-44ad-b355-cca24e4224c8
+# Demo Result ： 
+
+	2026-03-03 17:49:39+0000 | success | rows_raw=100000 | 83aac446-0cd3-44ad-b355-cca24e4224c8
