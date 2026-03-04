@@ -48,20 +48,27 @@ Schemas:
 ## Quick Start
 
 1) Start Postgres
+	
 	docker compose up -d
 
 2) Create schemas & tables
+	
 	PowerShell: (use cmd redirection)
+	
 	→ cmd /c "docker exec -i bank_pg psql -U bank -d bank_demo < schema_postgres.sql"
 
 4) Set env
+	
 	(Create .env)
+	
 	→ DATABASE_URL=postgresql+psycopg2://bank:bankpass@localhost:5432/bank_demo
 
 5) Generate raw data (with dirty injection)
+	
 	python generate_data.py --reset --n-transactions 100000
 
 6) Run ETL (full)
+	
 	python analyze_data.py --mode full --reset-state
 
 7) Run dashboard
