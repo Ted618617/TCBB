@@ -1,0 +1,16 @@
+name: bankdemo
+services:
+  pg:
+    image: postgres:16
+    container_name: bank_pg
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: bank
+      POSTGRES_PASSWORD: bankpass
+      POSTGRES_DB: bank_demo
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
