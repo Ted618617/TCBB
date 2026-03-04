@@ -51,11 +51,11 @@ Schemas:
 	docker compose up -d
 
 2) Create schemas & tables
-	# PowerShell: use cmd redirection
+	【 PowerShell: use cmd redirection 】
 	cmd /c "docker exec -i bank_pg psql -U bank -d bank_demo < schema_postgres.sql"
 
 3) Set env
-	# Create .env:
+	【 Create .env 】
 	DATABASE_URL=postgresql+psycopg2://bank:bankpass@localhost:5432/bank_demo
 
 4) Generate raw data (with dirty injection)
