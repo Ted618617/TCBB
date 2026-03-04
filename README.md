@@ -1,6 +1,7 @@
 # TCBB
 # YungTai
 # Bank Data Integration & Quality Pipeline (Postgres) — Demo Project
+# This is a demo project with synthetic data only.
 
 
 A small but production-minded data pipeline demo for a bank-like transaction domain:
