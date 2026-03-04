@@ -95,6 +95,10 @@ PS：Bad rows are written to meta.quarantine_transactions and excluded from Mart
 
 # Demo Result (example run)
 
+	2026-03-03 17:49:39+0000 | success | rows_raw=100000 | 83aac446-0cd3-44ad-b355-cca24e4224c8
+
+	--- --- ---
+
 	raw rows: 100,000
 
 	quarantine rows: 2,811
@@ -115,8 +119,4 @@ PS：Bad rows are written to meta.quarantine_transactions and excluded from Mart
 
 	Dashboard provides operational visibility (duration, pass rate, run_id traceability).
 
----
 
-# Demo Result ： 
-
-	2026-03-03 17:49:39+0000 | success | rows_raw=100000 | 83aac446-0cd3-44ad-b355-cca24e4224c8
