@@ -1,6 +1,7 @@
 # TCBB
 # TCBB_Ted
 # Bank Data Integration & Quality Pipeline (Postgres) — Demo Project
+# Demo Result ： 2026-03-03 17:49:39+0000 | success | rows_raw=100000 | 83aac446-0cd3-44ad-b355-cca24e4224c8
 
 A small but production-minded data pipeline demo for a bank-like transaction domain:
 - Raw → Staging → Mart layering
