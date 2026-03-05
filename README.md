@@ -19,6 +19,22 @@ Bank data integration often involves:
 This project demonstrates an end-to-end pipeline that is **traceable**, **auditable**, and **operationally observable**.
 
 ---
+<details>
+  <summary><b>Dashboard Preview (click to expand)</b></summary>
+
+  <p align="center">
+    <img src="docs/images/Run_Monitor.png" alt="Run Monitor" width="900" />
+  </p>
+
+  <p align="center">
+    <img src="docs/images/Data_Quality.png" alt="Data Quality" width="900" />
+  </p>
+
+  <p align="center">
+    <img src="docs/images/Business_KPI.png" alt="Business KPI" width="900" />
+  </p>
+</details>
+---
 
 ## Architecture (high-level)
 
