@@ -20,7 +20,10 @@ This project demonstrates an end-to-end pipeline that is **traceable**, **audita
 
 ---
 <details>
-  <summary><b>Dashboard Preview (click to expand)</b></summary>
+  <summary>
+    <b>📊 Dashboard Preview</b> <span>— click to expand ▾</span><br/>
+    <sub>Includes Run Monitor / Data Quality / Business KPI screenshots</sub>
+  </summary>
 
   <p align="center">
     <img src="docs/images/Run_Monitor.png" alt="Run Monitor" width="900" />
