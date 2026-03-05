@@ -37,7 +37,6 @@ This project demonstrates an end-to-end pipeline that is **traceable**, **audita
     <img src="docs/images/Business_KPI.png" alt="Business KPI" width="900" />
   </p>
 </details>
----
 
 ## Architecture (high-level)
 
